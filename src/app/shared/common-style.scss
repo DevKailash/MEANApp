@@ -1,0 +1,13 @@
+$c-primary: #1565c0;
+$c-primary-light: #90caf9;
+$c-primary-dark: #0d47a1;
+$c-light : #fff;
+$c-dark : #263238;
+$c-gray: #cfd8dc;
+$c-gray-light: #eceff1;
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

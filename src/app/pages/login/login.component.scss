@@ -1,0 +1,39 @@
+@import '../../shared/common-style';
+.mainDiv{
+    @include flexCenter;
+    height: 95vh;
+    .loginCard{
+        width: 30%;
+        height: 45%;
+        .cardHeader{
+            margin-bottom: 15px;
+            text-align: center;
+            color: $c-gray;
+            .mat-icon{
+                width: 100%;
+            }
+            mat-icon{
+                font-size: 54px;
+               
+            }
+            p{
+                display: block;
+                color: $c-dark;
+                // font-weight: 600;
+                font-size: 20px;
+            }
+        }
+        mat-form-field{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        mat-card-actions{
+            display: flex;
+            justify-content: flex-end;
+            button{
+                margin-right: 10px;
+                width: 35%;
+            }
+        }
+    }
+}

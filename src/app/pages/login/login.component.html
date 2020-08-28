@@ -1,0 +1,24 @@
+<div class="mainDiv">
+    <mat-card class="loginCard">
+        <mat-card-content>
+            <div class="cardHeader">
+                <mat-icon aria-hidden="false" aria-label="login">account_circle</mat-icon>
+                <p>Login</p>
+            </div>
+            <form >
+                <mat-form-field >
+                  <mat-label>User Name</mat-label>
+                  <input matInput placeholder="Ex. damon@gmail.com">
+                </mat-form-field>
+              
+                <mat-form-field >
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" placeholder="Ex. A25X&d" >
+                  </mat-form-field>
+            </form>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="navigate()">Login</button>
+        </mat-card-actions>
+      </mat-card>
+</div>
