@@ -5,9 +5,15 @@ $c-light : #fff;
 $c-dark : #263238;
 $c-gray: #cfd8dc;
 $c-gray-light: #eceff1;
+$c-gray-backgroud: #eceff1;
+$c-text-light:#546e7a;
+$c-icon-gray: #90a4ae;
 
 @mixin flexCenter {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.spacer {
+  flex: 1;
 }

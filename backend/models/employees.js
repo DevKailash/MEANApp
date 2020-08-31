@@ -4,11 +4,11 @@ const employeesSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    mobile:{
-        type:Number,
+    gender:{
+        type:String,
         required:true
     },
-    city:{
+    designation :{
         type:String,
         required:true
     }

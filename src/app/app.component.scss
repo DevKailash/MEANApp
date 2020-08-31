@@ -5,20 +5,49 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-  }
-
-  p {
-    margin: 0;
-  }
+@import './shared/common-style';
 
   .spacer {
     flex: 1;
+  }
+  mat-toolbar{
+    background-color: $c-light;
+    color: $c-dark;
+    box-shadow: rgba(67, 117, 151, 0.08) 0px 3px 7px 0px;
+    .appName{
+      margin-left: 15px;
+    }
+    .userName{
+      color: $c-text-light;
+      font-size: 14px;
+    }
+  }
+  mat-drawer-container{
+    background-color: $c-gray-backgroud;
+    // height: 100%;
+
+    mat-list{
+      button{
+        margin: auto;
+      }
+    }
+
+    mat-drawer{
+      width: 100px;
+    }
+    .copyright{
+      position: absolute;
+      bottom: 10px;
+      font-size: 10px;
+      color: $c-gray;
+      left: 10px;
+    }
+    .logo{
+      height: 116px;
+      width: 100%;
+      // @include flexCenter;
+      img{
+        width: 99px;
+      }
+    }
   }
