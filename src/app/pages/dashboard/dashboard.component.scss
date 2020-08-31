@@ -1,14 +1,35 @@
 @import '../../shared/common-style';
 .mainDiv{
   padding: 15px;
-  background-color: $c-gray-light;
-  // height: 95%;
-  mat-card{
-    width: 100%;
-    margin: 10px;
-    height: 50vh;
-    mat-icon{
-      color: $c-gray;
+  // background-color: $c-gray-light;
+  // height: 90vh;
+  div{
+    width: 95%;
+    margin: auto;
+    mat-card{
+      mat-icon{
+        color: $c-icon-gray;
+      }
     }
   }
+  mat-toolbar{
+    .refreshBtn{
+      mat-icon{
+        transition:  0.6s ease-out;
+      }
+      &:hover {
+        mat-icon{
+          transform: rotateZ(360deg);
+        }
+
+    }
+    }
+  }
+}
+.mat-stepper-horizontal {
+  margin-top: 8px;
+}
+
+.mat-form-field {
+  margin-top: 16px;
 }

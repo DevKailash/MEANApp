@@ -13,7 +13,8 @@ export class HttpService {
   // get API
   public getData(req: any): __Observable<[]> {
     let api = this.url+req
-    return this.httpClient.get<[]>(api, {responseType: 'json'})
+    const headers = { 'Accept': 'application/json'}
+    return this.httpClient.get<any>(api, {...headers, responseType: 'json' })
     .pipe(
       // retry(1),
       catchError(this.handleError)
@@ -21,9 +22,9 @@ export class HttpService {
   }
 
   // post API
-  public post(req: any,data): __Observable<[]> {
+  public postDetails(req: any,data): __Observable<[]> {
     let api = this.url+req
-    const headers = { 'Content-Type': 'application/x-www-form-urlencoded'}
+    const headers = { 'Content-Type': 'application/json'}
     return this.httpClient.post<[]>(api, data, {headers})
     .pipe(
       catchError(this.handleError)

@@ -1,1 +1,40 @@
-<router-outlet></router-outlet>
+
+<mat-drawer-container fullscreen>
+  <mat-drawer #sidenav mode="side" opened>
+    <div class="logo">
+        <img src="assets/imgs/logo.jpg">
+    </div>
+    <mat-divider></mat-divider>
+    <mat-list *ngIf="showHead">
+      <mat-list-item>
+        <button mat-icon-button aria-label="dashboard">
+          <mat-icon>dashboard</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <button mat-icon-button aria-label="face">
+          <mat-icon>face</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-list>
+    <div class="copyright">
+      © 2020 BigCity
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar>
+    <button mat-icon-button aria-label="menu icon" (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="appName">POC</span>
+    <span class="spacer"></span>
+    <span class="userName">Damon</span>
+
+    <button mat-icon-button  aria-label="recent_actors">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+  </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
